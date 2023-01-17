@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>고희연 초대장 전송</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 로고 클릭 후 전송.</strong></p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('a90d8a9003ca0080a82dea79258684aa');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '축 고희연 [ 지춘자 여사 ]',
+        description: '일시 : 2023 . 01 . 28 (토) 오후 4시',
+        imageUrl:
+          'https://cdn.discordapp.com/attachments/993125147580059719/1064166721503645756/KakaoTalk_20230115_150104608.jpg',
+        link: {
+          mobileWebUrl: 'https://kwaksuwon.github.io/suwon_Web/',
+          webUrl: 'https://kwaksuwon.github.io/suwon_Web/',
+        },
+      },
+      social: {
+        likeCount: 21,
+        commentCount: 14,
+        sharedCount: 54,
+      },
+      buttons: [
+        {
+          title: '고희연 장소 안내',
+          link: {
+            mobileWebUrl: 'https://kwaksuwon.github.io/suwon_Web/',
+            webUrl: 'https://kwaksuwon.github.io/suwon_Web/',
+          },
+        },
+      ],
+    })
+  }
+</script>
+  </body>
+</html>
