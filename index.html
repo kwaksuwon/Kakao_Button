@@ -12,31 +12,31 @@
     <img src="images/Kakao_Logo.png" width="80" />
 </a>
 <script type="text/javascript">
-  Kakao.init('a90d8a9003ca0080a82dea79258684aa'); 
+  Kakao.init('이곳에 자바 스크립트 키를 입력해주세요.'); //발급 사이트 : https://developers.kakao.com/console/app
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '축 고희연 [ 지춘자 여사 ]', //상단 타이틀 메시지
-        description: '일시 : 2023.01.28 (토) 오후 4시', //타이틀 바로밑 설명문구
+        title: '이곳에 타이틀 내용을 입력하세요.', //상단 타이틀 메시지
+        description: '이곳에 설명 내용을 입력하세요.', //타이틀 바로밑 설명문구
         imageUrl:
-          'https://cdn.discordapp.com/attachments/993125147580059719/1064166721503645756/KakaoTalk_20230115_150104608.jpg', //상단 대표이미지
+          '이곳에 이미지URL을 삽입하세요.', //상단 대표이미지
         link: {
-          mobileWebUrl: 'https://kwaksuwon.github.io/suwon_Web/', //대표이미지 클릭시 이동되는 모바일 URL
-          webUrl: 'https://kwaksuwon.github.io/suwon_Web/', //대표이미지 클릭시 이동되는 웹 URL
+          mobileWebUrl: '이곳에 이돌될 모바일 URL을 삽입하세요.', //대표이미지 클릭시 이동되는 모바일 URL
+          webUrl: '이곳에 이동될 웹 URL을 삽입하세요.', //대표이미지 클릭시 이동되는 웹 URL
         },
       },
       social: {
-        likeCount: 21, //좋아요 갯수 (MAX_9999)
-        commentCount: 14, //댓글 갯수 (MAX_9999)
-        sharedCount: 54, //공유 갯수 (MAX_9999)
+        likeCount: 10, //좋아요 갯수 (MAX_9999)
+        commentCount: 10, //댓글 갯수 (MAX_9999)
+        sharedCount: 10, //공유 갯수 (MAX_9999)
       },
       buttons: [
         {
-          title: '버튼 내용 작성', //메시지 하단 버튼 문구
+          title: '이곳에 버튼 내용을 입력하세요.', //메시지 하단 버튼 문구
           link: {
-            mobileWebUrl: 'https://kwaksuwon.github.io/suwon_Web/', //버튼 클릭시 이동되는 모바일 URL
-            webUrl: 'https://kwaksuwon.github.io/suwon_Web/', //버튼 클릭시 이동되는 웹 URL
+            mobileWebUrl: '이곳에 이돌될 모바일 URL을 삽입하세요.', //버튼 클릭시 이동되는 모바일 URL
+            webUrl: '이곳에 이돌될 웹 URL을 삽입하세요.', //버튼 클릭시 이동되는 웹 URL
           },
         },
       ],
